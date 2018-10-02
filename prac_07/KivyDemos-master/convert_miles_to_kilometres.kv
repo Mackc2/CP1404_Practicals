@@ -1,0 +1,25 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            size_hint: 0.7,1
+            id: input_number
+            text:
+            on_text: app.handle_convert()
+        BoxLayout:
+            size_hint: 0.3,1
+            orientation: 'vertical'
+            Button:
+                text:"Up"
+                on_press: app.handle_increment(1)
+            Button:
+                text:"Down"
+                on_press: app.handle_increment(-1)
+#    Button:
+#        text: "Convert Miles to Km"
+#        on_press:app.handle_convert()
+    Label:
+        id: answer_display
+        text:
+        color: (1,1,0,1)

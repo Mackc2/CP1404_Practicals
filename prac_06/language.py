@@ -13,5 +13,5 @@ print(python.name)
 program_list = [ruby, python, visual_basic]
 print("The dynamically typed languages are: ")
 for programs in program_list:
-    if programs.is_dynamic() is True:
+    if programs.is_dynamic():
         print(programs.name)
